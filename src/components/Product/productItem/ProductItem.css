@@ -1,19 +1,66 @@
-.cart{
-    width: 200px;
-    height: 388px;
-    margin-top: 140px;
-    margin-left: 10px;
+.ProductItem-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
     display: flex;
-    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 480px;
 }
 
-.cart-img-top{
-    width: 200px;
-    height: 200px;
+.ProductItem-card:hover {
+    transform: translate(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.cart-tittle
-{
-    font-size: 12px;
-    line-height: 18px;
+.ProductItem-sold {
+    color: #777;
+    text-align: left;
+    margin-left: 8px;
+}
+
+.card-img-top {
+    max-width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+
+.ProductItem-name {
+    font-size: 1em;
+    margin: 0;
+    color: black;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.ProductItem-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Align items to center vertically */
+    justify-content: space-between;
+    width: 100%; /* Make the info section take full width */
+    margin-bottom: 8px; /* Add some space below */
+}
+
+.ProductItem-rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating-star {
+    color: yellow;
+    margin-left: 4px; /* Add some space between rating value and star */
+}
+
+.ProductItem-price {
+    font-weight: bold;
+    color: black;
+    margin-top: auto; /* Push price to the bottom */
 }

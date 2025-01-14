@@ -1,39 +1,25 @@
 import React from "react";
-import'./ProductItem.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap-icons/font/bootstrap-icons.css';
-
-
-function ProducItem({image, name, rating, price, discount, fastDelivery, sold}){
-    const renderRating=()=>{
-        let stars=[];
-        for(let i=0; i<5; i++)
-            {
-                stars.push(
-                    <span key={i} className={i < rating ? 'text-warning' : 'text-secondary'}>
-                        &#9733
-                    </span>
-                )
-            }
-    }
-    return(
-        <productitem className="cart">
-            <img src={image} className="cart-img-top" alt={name}/>
-            <div className="card-body">
-                <h5 className="cart-tittle">{name}</h5>
-                <div className="d-flex justify-content-between align-items-center">
-                    <div className="text-warning">
-                        {renderRating()}
-                        <span className="ms-2 text-muted small">{sold} đã bán</span>
-                    </div>
-                    <h5 className="text-danger">{price}</h5>
-                    <div className="vr mx-2"></div>
+import './ProductItem.css';
+import { Link } from "react-router-dom";
+function ProductItem({ id,name, rating, price, image, sold }) {
+    return (
+        <div className="ProductItem-card">
+            <img src={image} className="card-img-top" alt="Item Image" width="100%" />
+            <div className="ProductItem-name text-dark">{name}</div>
+            <div className="ProductItem-info text-dark">
+                <div className="ProductItem-rating">
+                    <span className="rating-value">{rating}</span>
+                    <span className="rating-star">&#9733;</span>
                 </div>
-                {discount && <p className="text-success">Giảm giá: {discount}</p>}
-                {fastDelivery && <p className="text-primary">Giao hàng siêu tốc: {fastDelivery}</p>}
+                <div className="ProductItem-sold">Đã bán {sold}</div>
             </div>
-        </productitem>
+            <div className="ProductItem-price">{price}VND</div>
+            <Link to={`/ProductItem/${id}`} className="btn btn-primary">
+                Chi tiết sản phẩm
+            </Link>
+        </div>
     );
 }
 
-export default ProducItem;
+export default ProductItem;
+

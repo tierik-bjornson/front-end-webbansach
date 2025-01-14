@@ -1,0 +1,83 @@
+.book-management-container {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px; /* Chiều rộng sidebar */
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Căn giữa theo chiều ngang */
+  padding: 20px;
+}
+
+.content-inner {
+  width: 100%; /* Chiều rộng nội dung (bao gồm bảng và tiêu đề) */
+  max-width: 1200px; /* Đảm bảo không quá rộng */
+  margin: 0 auto; /* Căn giữa nội dung */
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px; /* Kích thước tiêu đề */
+  margin-bottom: 10px; /* Tạo khoảng cách dưới tiêu đề */
+  color: #333;
+  font-weight: bold;
+
+}
+
+.book-table {
+  width: 200%; /* Bảng sẽ rộng bằng nội dung chính */
+  border-collapse: collapse; /* Loại bỏ khoảng cách giữa các ô */
+  margin-top: 20px;
+}
+
+.book-table th,
+.book-table td {
+  padding: 12px; /* Khoảng cách bên trong ô */
+  text-align: center;
+  border: 1px solid #ccc; /* Đường kẻ bảng */
+}
+
+.book-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.book-table tr:nth-child(even) {
+  background-color: #f9f9f9; /* Màu nền xen kẽ */
+}
+
+.book-table tr:hover {
+  background-color: #f1f1f1; /* Màu khi hover */
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 8px 16px;
+  margin: 0 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.edit-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #45a049;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #e53935;
+}

@@ -1,0 +1,147 @@
+/* Nền mờ */
+.login-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Hộp đăng nhập */
+  .login-popup {
+    background: white;
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
+  
+  /* Nút đóng */
+  .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    color: red;
+  }
+  
+  /* Tiêu đề */
+  .login-popup h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Nhãn và ô nhập liệu */
+  .login-popup .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .login-popup .form-group label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .login-popup .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  /* Nút đăng nhập */
+  .login-popup button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .login-popup button[type="submit"]:hover {
+    opacity: 0.9;
+  }
+  
+  /* Link "Forgot Password?" */
+  .login-popup a.forgot-password {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #2575fc;
+    text-decoration: none;
+  }
+  
+  .login-popup a.forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  /* Đường dẫn "Sign up now" */
+  .login-popup p {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .login-popup p a {
+    color: #2575fc;
+    text-decoration: none;
+  }
+  
+  .login-popup p a:hover {
+    text-decoration: underline;
+  }
+
+  .dropdown-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-radius: 4px;
+    width: 150px;
+  }
+  
+  .dropdown-menu li {
+    padding: 10px;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  .dropdown-menu li:hover {
+    background-color: #f1f1f1;
+  }
+
+  .success-message {
+    color: green;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  

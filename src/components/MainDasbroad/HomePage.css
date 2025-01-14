@@ -1,0 +1,15 @@
+.filter-container {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.filter-title{
+    font-size: 0.5rem;
+    margin-bottom: 10px;
+}
+.filter-options{
+    margin-bottom: 10px;
+}
+
+.form-check{
+    margin-bottom: 10px;
+}

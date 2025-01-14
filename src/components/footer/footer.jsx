@@ -8,8 +8,8 @@
 function Footer()
 {
     return( 
-        <footer>
-        <div className="footer">
+        <footer> 
+        <div className="d-none d-md-flex footer">
             <div className="footer-collum">
                 <h4>Hỗ trợ khách hàng</h4>
                     <p>Hotline: 1900-6035</p>

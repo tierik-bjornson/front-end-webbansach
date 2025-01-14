@@ -1,69 +1,18 @@
-/* src/components/ProductList.css */
-
-/* Styling for the container */
-.container {
-    padding: 20px;
+.Product-List {
+    column-count: 5;
 }
 
-/* Ensure products are well spaced and aligned */
-.row {
-    margin: 0 -15px;
+.Product-List {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
-.col-md-4 {
-    padding: 15px;
-}
-
-/* Add some padding and margin to each product item */
-.product-item {
-    margin-bottom: 30px;
-}
-
-/* Additional styling for product items */
-.product-item .card {
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.2s ease-in-out;
-}
-
-.product-item .card:hover {
-    transform: translateY(-5px);
-}
-
-.product-item .card-img-top {
-    height: 200px;
-    object-fit: cover;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.product-item .card-body {
-    padding: 15px;
-}
-
-.product-item .card-title {
-    font-size: 1.1rem;
-    font-weight: bold;
-}
-
-.product-item .badge {
-    font-size: 0.875rem;
-    padding: 5px 10px;
-    border-radius: 10px;
-}
-
-.product-item .text-muted {
-    font-size: 0.875rem;
-    margin-left: 10px;
-}
-
-.product-item .text-danger {
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.product-item .card-text {
-    font-size: 0.9rem;
-    color: #757575;
-    margin-top: 10px;
+.ProductList-link {
+    text-decoration: none;
+    color: inherit;
+    width: calc(33.333%-20px);
+    display: flex;
+    justify-content: center;
 }

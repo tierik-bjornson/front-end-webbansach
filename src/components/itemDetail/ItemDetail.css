@@ -1,0 +1,37 @@
+.item-detail {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 33%;
+    padding: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .item-detail .row {
+    display: flex;
+    width: 100%;
+  }
+  
+  .item-detail img {
+    max-width: 100%; /* Giảm kích thước của ảnh */
+    height: auto;
+  }
+  
+  .item-detail h2 {
+    margin: 0;
+  }
+  
+  .item-detail button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .box-shadow {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
