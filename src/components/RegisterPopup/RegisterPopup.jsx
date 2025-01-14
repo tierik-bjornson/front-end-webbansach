@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./RegisterPopup.css";
-import authApi from "../../api/authApi"; // Đường dẫn tới file API
+import authApi from "../../api/authApi"; 
 
 const RegisterPopup = ({ isOpen, onClose, onSwitchToLogin }) => {
   if (!isOpen) return null;
@@ -19,7 +19,7 @@ const RegisterPopup = ({ isOpen, onClose, onSwitchToLogin }) => {
   });
 
   const [errorMessage, setErrorMessage] = useState("");
-  const [successMessage, setSuccessMessage] = useState(""); // Thêm state cho thông báo thành công
+  const [successMessage, setSuccessMessage] = useState("");
 
   // Hàm xử lý thay đổi giá trị input
   const handleChange = (e) => {
@@ -37,7 +37,7 @@ const RegisterPopup = ({ isOpen, onClose, onSwitchToLogin }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setErrorMessage("");
-    setSuccessMessage(""); // Reset success message khi bắt đầu đăng ký
+    setSuccessMessage(""); 
 
     const {
       username,
